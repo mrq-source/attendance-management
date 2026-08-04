@@ -67,7 +67,6 @@ ul{
     width:100dvw;
     height:100dvh;
     background-color: #c0d6df;
-    background-image: url(background.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -78,7 +77,7 @@ ul{
     justify-content: center;
     align-items: center;
     position: relative;
-    top:8rem;
+    top:6rem;
 }
 .name{
     display:flex;
@@ -92,12 +91,13 @@ ul{
     justify-self: center;
     align-items: center;
     border-color: black;
-    top:clamp(5vh, 6rem, 10rem);
+    top:clamp(5vh, 3rem, 10rem);
 
 }
 table{
     border-color: black;
-    width: 1000px;
+    width: 1150px;
+    height: 400px;
     align-self:center;
 }
 th{
@@ -107,6 +107,7 @@ th{
 tr{
     justify-content: center;
     align-items: center;
+    height: 40px;
 }
 td{
     width: 40px;
