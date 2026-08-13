@@ -5,8 +5,6 @@
     margin: 0;
 }
 html{
-    scroll-behavior: smooth;
-    scrollbar-width: 5px;
     scrollbar-color: #0aab75;
 }
 body{
@@ -14,10 +12,13 @@ body{
     height: 100dvh;
     font-size: 16px;
     background-image: url(download.jpg);
+    background-repeat:no-repeat;
+    background-position: top;
+    background-size: cover;
     user-select: none;
 }
 section{
-    width: 100%;
+    width: 100dvw;
     height: 100dvh;
 }
 .bg{
@@ -30,26 +31,40 @@ section{
     width: clamp(350px, 30vw, 45vw);
     height:clamp(70vh, 80dvh, 90dvh);
     background:url(Ultra\ premium\ background.jpg);
-    background-position: -8px -100px;
+    background-position: -10px -100px;
     background-size: cover;
     border: 10px solid black;
     border-radius: 20px;
 }
 #logo{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
-    top:3rem;
+    background-image: url(logo.jpg);
+    background-position: center;
+    background-size: contain;
+    position: fixed;
+    top:8rem;
     background-color: #5284b0;
+}
+.name{
+    position: fixed;
+    color: aliceblue;
+    height: 8%;
+    top: 18rem;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 3px 3px grey;
 }
 #form{
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 300px;
+    position: relative;
+    top: 25rem;
+    left: 3.5rem;
     width: 300px;
     height:fit-content;
     label{
@@ -68,17 +83,19 @@ section{
     button{
         position: relative;
         align-self: center;
-        top: 30px;
+        top: 65px;
         width: 100px;
         height: 50px;
     }
 }
 #reset{
     font-size: 15px;
-    position: fixed;
+    position: relative;
     display: flex;
-    top: 25.5rem;
-    left: 30.5rem;
+    align-self: center;
+    justify-self: center;
+    left: -15rem;
+    top: 10.5rem;
     z-index: 10;
 }
 #sign{
@@ -86,6 +103,6 @@ section{
     position: fixed;
     display: flex;
     color: whitesmoke;
-    top: 31rem;
+    top: 39rem;
     z-index: 10;
 }

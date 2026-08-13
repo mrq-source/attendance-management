@@ -1,0 +1,439 @@
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #222;
+
+    background-color: #f5f7fa;
+
+    line-height: 1.6;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+header {
+    background-color: #123c69;
+
+    transition: background-color 0.3s ease;
+}
+
+.navbar {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* Logo */
+
+.logo {
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd166;
+}
+
+
+/* =====================================================
+   DARK MODE BUTTON
+===================================================== */
+
+.theme-btn {
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    background-color: #ffd166;
+
+    color: #123c69;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.theme-btn:hover {
+    background-color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(18, 60, 105, 0.85),
+            rgba(18, 60, 105, 0.85)
+        ),
+        url("college.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.hero-content {
+    max-width: 750px;
+
+    padding: 30px;
+
+    color: white;
+}
+
+
+.hero-content h1 {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-content p {
+    font-size: 20px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   TIMETABLE BUTTON
+===================================================== */
+
+.timetable-btn {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background-color: #ffd166;
+
+    color: #123c69;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.timetable-btn:hover {
+    background-color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 30px;
+
+    text-align: center;
+}
+
+
+.about h2,
+.contact h2 {
+    color: #123c69;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+
+.about-description {
+    max-width: 750px;
+
+    margin: 0 auto 40px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: white;
+
+    width: 300px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+.card h3 {
+    color: #123c69;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+    background-color: #eaf0f6;
+
+    text-align: center;
+
+    padding: 60px 30px;
+
+    transition: background-color 0.3s ease;
+}
+
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background-color: #123c69;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode {
+    background-color: #121212;
+
+    color: #eeeeee;
+}
+
+
+/* Navbar */
+
+body.dark-mode header {
+    background-color: #050505;
+}
+
+
+/* About headings */
+
+body.dark-mode .about h2,
+body.dark-mode .contact h2 {
+    color: #ffd166;
+}
+
+
+/* Cards */
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+
+    color: #dddddd;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+body.dark-mode .card h3 {
+    color: #ffd166;
+}
+
+
+/* Contact */
+
+body.dark-mode .contact {
+    background-color: #1b1b1b;
+}
+
+
+/* Button */
+
+body.dark-mode .theme-btn {
+    background-color: #333333;
+
+    color: #ffffff;
+}
+
+
+body.dark-mode .theme-btn:hover {
+    background-color: #555555;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 18px;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 500px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+
+    .about h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+}
