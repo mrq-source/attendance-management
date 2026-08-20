@@ -86,6 +86,10 @@ section{
         top: 65px;
         width: 100px;
         height: 50px;
+        background-color: burlywood;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 30px;
     }
 }
 #reset{
